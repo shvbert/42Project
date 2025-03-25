@@ -1,0 +1,14 @@
+<head>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <link href="backgroound.css">
+</head>
+
+<body>
+    <div><button id="Color">Click!</button></div>
+    <script>
+        $(document).ready(function() {
+            $("#Color").click(function() {
+                let newColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+                $("body").css("background-color", newColor);});});
+    </script>
+</body>
